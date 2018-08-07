@@ -29,7 +29,7 @@ ResultView.prototype.updateView = function (planet) {
   planetVolume.textContent = `Volume: ${planet.volume}`;
   planetGravity.textContent = `Gravity: ${planet.gravity}`;
   planetMoons.textContent = `Moons: ${planet.moons}`;
-  planetImage.textContent = `<img src="${planet.image}">`;
+  planetImage.setAttribute('src', planet.image);
 
   planetInfo.appendChild(planetName);
   planetInfo.appendChild(planetOrbit);
@@ -37,8 +37,8 @@ ResultView.prototype.updateView = function (planet) {
   planetInfo.appendChild(planetSurfaceArea);
   planetInfo.appendChild(planetVolume);
   planetInfo.appendChild(planetGravity);
-  planetInfo.appendChild(planetMenu);
-  planetInfo.appendChild(planetInfo);
+  planetInfo.appendChild(planetMoons);
+  planetInfo.appendChild(planetImage);
   this.container.innerHTML = '';
   this.container.appendChild(planetInfo);
 
