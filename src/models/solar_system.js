@@ -20,4 +20,5 @@ SolarSystem.prototype.findPlanetByName = function (name) {
   }
 }
 
+
 module.exports = SolarSystem;
