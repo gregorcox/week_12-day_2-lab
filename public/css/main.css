@@ -1,3 +1,45 @@
 img {
   height: 100px;
 }
+
+.title-bar {
+  text-align: center;
+  color: yellow;
+}
+
+body {
+  font-family: arial;
+  background-color: #011638;
+  color: white;
+  font-size: 120%;
+  background-image: url("../images/stars.jpg");
+}
+
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #011638;
+    height: 70%;
+    position: fixed;
+    border: 1px solid yellow;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+
+li {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.planet-details {
+  border: 1px solid yellow;
+  padding-left: 100px;
+  text-align: center;
+  background-color: #011638;
+}
+
+.nav {
+}
