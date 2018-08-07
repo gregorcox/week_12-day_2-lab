@@ -15,7 +15,7 @@ SolarSystem.prototype.bindEvents = function () {
 SolarSystem.prototype.findPlanetByName = function (name) {
   for (planet of this.planets) {
     if (planet.name === name) {
-      return planet;
+      PubSub.publish("Planet:FoundPlanet", planet);
     }
   }
 }
